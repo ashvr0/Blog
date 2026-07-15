@@ -1,7 +1,50 @@
 :root {
-    --bg: #ffffff;
+    --bg: #faf8f4;
 }
 
 body {
     background: var(--bg);
+    color: #3a3530;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.tooltip {
+    position: relative;
+    cursor: help;
+    text-decoration: underline;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+a {
+    color: #6b4f3a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3f2d20;
 }

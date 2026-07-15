@@ -5,52 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="description" content="Cybersecurity portfolio - penetration tester and coder">
      <meta name="keywords" content="cybersecurity, penetration testing, ethical hacking, linux, security research, computer science, C++, JavaScript, web security, bug bounty">
-     <meta name="author" content="ash">
+     <meta name="theme-color" content="#1a1a2e">
+     <meta name="author" content="Ash">
      <meta property="og:title" content="ash | Cybersecurity Portfolio">
      <meta property="og:description" content="Cybersecurity portfolio - penetration tester and coder">
+     <meta property="og:image" content="Images/favicon.ico">
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:creator" content="Ash">
+     <meta name="twitter:title" content="ash | Cybersecurity Portfolio">
+     <meta name="twitter:description" content="Cybersecurity portfolio - penetration tester and coder">
+     <meta name="twitter:image" content="Images/favicon.ico">
      <meta property="og:type" content="website">
+     <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+     <link rel="apple-touch-icon" href="Images/favicon.ico">
      <title>ash | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <nav>
+        <div>
+            <a href="/">Home/</a>
+            <a href="blog/index.html">Blog/</a>
+        </div>
+    </nav>
+
     <main>
     <header>
-        <h1 style="display: flex; align-items: center; justify-content: center; gap: 12px;">
-            <img src="Images/Tux.png" style="width: 50px; image-rendering: optimizeSpeed;">
-                ls /portfolio/ash/blog
-            <img src="Images/Tux.png" style="width: 50px; image-rendering: optimizeSpeed;">
+        <h1 class="logo">
+            <img src="Images/Tux.png" style="width: 50px; image-rendering: optimizeSpeed;" alt="Image of Linux Tux">
+                <span>/home/ash/portfolio</span>
+            <img src="Images/Tux.png" style="width: 50px; image-rendering: optimizeSpeed;" alt="Image of Linux Tux">
         </h1>
     </header>
-    <p>A portfolio is a type of website that features regularly updated content, often in the form of articles or posts. portfolios can cover a wide range of topics, from personal experiences and hobbies to news and professional insights. They are typically maintained by individuals or small groups and can include multimedia elements such as images, videos, and links to other websites. portfolios have become a popular platform for sharing information, expressing opinions, and connecting with others who have similar interests.</p>
-    
-    <h2>$whoami</h2>
-    <p>ash@portfolio ~> I'm ash | penetration tester | Security Researcher | Actively studying Cybersecurity and Computer Science.</p>
+    <section id="about">
+        <h2><code>ash@portfolio ~> whoami</code></h2>
+        <p>I'm ash | penetration tester | Security Researcher | Actively studying Cybersecurity and Computer Science.</p>
+    </section>
 
-    <h2>$cat ~/Tech_Stack</h2>
-    <p>ash@portfolio ~> Linux, Arch, Burp Suite, HTML, CSS, SCSS, JavaScript, Bash, Toml, C++, QML, lua, powershell</p>
+    <section id="skills">
+        <h2><code>ash@portfolio ~> cat ~/Tech_Stack</code></h2>
+        <p>ash@portfolio ~> Linux, Arch, NixOS, Burp Suite, NeoVim <span class="tooltip">Frontend<span class="tooltip-text">HTML, CSS, JavaScript</span></span>, SCSS, Bash, Toml, C++, QML, Lua, PowerShell</p>
+        
+        <h2><code>ash@portfolio ~> cat ~/Certifications &amp; Training</code></h2>
+        <p> I'm still learning through labs, CTFs, and personal projects. I'm too broke to afford a certification.</p>
+    </section>
 
-    <h2>$cat ~/Certifications & Training</h2>
-    <p>ash@portfolio ~> Im still learning through labs, CTFs, and personal projects. I'm too broke to afford a certification.</p>
+    <section id="projects">
+        <h2><code>ash@portfolio ~> ls ~/Projects</code></h2>
+        
+        <div>
+            <h3>NixOS Configuration</h3>
+            <img src="https://raw.githubusercontent.com/ashvr0/NixOS-Config/refs/heads/main/assets/Desktop.png" style="width: 350px;" alt="Image of Linux Tux">
+            <p>My NixOS Configuration. Uses Quickshell as bar! </p>
+            <a href="https://github.com/ashvr0/NixOS-Config" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </div>
+    </section>
 
-    <h2>$ls ~/Projects</h2>
-    <div>
-    <h3>Project_Name_Placeholder</h3>
-    <p>project_description</p>
-    <img src="Images/Tux.png" style="width: 100px;"">
-    </div>
 
-   <h2>Connect</h2>
-    <a href="https://github.com/ashyrv0" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href="https://profile.hackthebox.com/profile/019e0df7-1933-71f2-b831-9bd351dcd43c" target="_blank" rel="noopener noreferrer">HTB Profile</a>
-    <a href="https://tryhackme.com/p/Retrz0" target="_blank" rel="noopener noreferrer">THM Profile</a>
-    <a href="mailto:ashvr0@protonmail.com">ashvr0@protonmail.com</a>
-
-    <p>Please give me a job &lpar;In corporate language: Open to internships, collaborations, and cybersecurity opportunities.&rpar;</p><hr>
-    <footer>
-     &copy; 2026 ashyrv0
-    </footer>
+    <section id="contact">
+        <h2><code>ash@portfolio ~> ssh connecting</code></h2>
+        <a href="https://github.com/ashyrv0" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://profile.hackthebox.com/profile/019e0df7-1933-71f2-b831-9bd351dcd43c" target="_blank" rel="noopener noreferrer">HTB</a>
+        <a href="https://tryhackme.com/p/Retrz0" target="_blank" rel="noopener noreferrer">THM</a>
+        <a href="https://leetcode.com/u/R0G60gW5HB/" target="_blank" rel="noopener noreferrer">Leetcode</a>
+        <a href="mailto:ashvr0@protonmail.com">ashvr0@protonmail.com</a>
+        <p>Please give me a job &lpar;In corporate language: Open to internships, collaborations, and cybersecurity opportunities.&rpar;</p><hr>
+    </section>
     </main>
-</body>
+    <footer>
+        <p>&copy; <span id="year"></span> ashyrv0</p>
+    </footer>
 <script src="script.js"></script>
+</body>
 </html>

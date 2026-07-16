@@ -150,4 +150,8 @@ margin-bottom: 40px;
     #projects {
         grid-template-columns: 1fr;
     }
+
+    #projects img {
+        max-height: 220px;
+    }
 }
